@@ -1,0 +1,31 @@
+.blog-container .blog .upcoming-item{
+    width: 312px;
+    height: 242px;
+    border-radius: 15px;
+    padding: 52px 30px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.blog-container .blog .upcoming-item span{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.blog-container .blog .upcoming-item .country{
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.blog-container .blog .upcoming-item .time{
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+    color:#4D4D4D;
+}

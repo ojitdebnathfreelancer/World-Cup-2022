@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+/* ================
+    abov font link
+================== */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.container{
+    width: 1170px;
+    margin:0 auto;
+}
+
+:root{
+    --poppins:'Poppins', sans-serif;
+    --roboto:'Roboto', sans-serif;
+}
+
+/* =====================
+    common css ends 
+====================== */
+
+/* =====================
+    banner css starts
+====================== */
+.banner-container{
+    display: flex;
+    padding: 0 50px;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #161616 ;
+}
+
+.banner-container .banner-text{
+    width: 50%;
+    color: white;
+}
+
+.banner-container .banner-text h1{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 50px;
+    line-height: 80px;
+}
+
+.banner-container .banner-text p{
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    padding-right: 46px;
+    margin-top: 20px;
+}
+
+.banner-container .banner-text .btn{
+    margin-top: 30px;
+}
+
+.banner-container .banner-text .btn a{
+    display: inline-block;
+    width: 150px;
+    height: 56px;
+    font-family: var(--poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+    line-height: 56px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #DD0000;
+}
+
+.banner-container .banner-text .btn a i{
+    width: 30px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    animation:row 1s linear infinite;
+}
+
+@keyframes row{
+    0%{
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    100%{
+        padding-left: 5px;
+        box-sizing: border-box;
+    }
+}
+
+.banner-container .banner-img{
+    width: 50%;
+    padding-top: 58px;
+    box-sizing: border-box;
+}
+
+.banner-container .banner-img img{
+    width: 100%;
+}
+/* ==================
+    banner css ends
+=================== */
+
+/* ==================
+    blog css starts
+=================== */
+.blog-container{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 100px;
+}
+
+.blog-container .menu{
+    width: 312px;
+    height: 200px;
+    background-color: black;
+    margin-right:20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blog-container .menu li{
+    width: 90%;
+    border-radius:5px;
+    box-sizing: border-box;
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size:14px;
+    text-transform: capitalize;
+    text-align: center;
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.blog-container .menu li a{
+    color: #000000;
+    display: block;
+}
+
+.blog-container .blog{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+
+.blog-container .blog .blog-item{
+    width: 312px;
+    height: 362px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+.blog-container .blog .blog-item .btn a{
+      font-family: var(--poppins);
+      font-weight: 500;
+      font-size: 16px;
+      text-transform: capitalize;
+      color:black;
+      padding: 4px 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-left: 20px;
+      margin-top: 20px;
+      box-sizing: border-box;
+      display: inline-block;
+}
+
+.blog-container .blog .blog-item p{
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.blog-container .blog .blog-item .comments{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.blog-container .blog .blog-item .comments .time{
+    margin-right: 30px;
+}
+/* ==================
+    blog css ends
+=================== */
+.veiw-all-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.veiw-all-container .blog-view-more{
+    background-color: #DD0000;
+    width: 131px;
+    height: 47px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.veiw-all-container .blog-view-more a{
+    display: block;
+    line-height: 47px;
+    font-family:var(--poppins);
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    text-transform: capitalize;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 130px;
+    padding: 130px 0;
+    box-sizing: border-box;
+}
+
+footer .footer-container .goal{
+    text-align: center;
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-style: 40px;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+}
+
+footer .footer-container hr{
+    width: 80%;
+    margin: 0 auto;
+    display: none;
+}
+
+footer .footer-container .link{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer .footer-container .link li a{
+    font-family: var(--poppins);
+    font-weight: 500;
+    font-size: 16px;
+    color: gray;
+    margin-right:30px;
+}
+
+footer .footer-container .social-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer .footer-container .social-link li{
+    margin-right: 20px;
+}
+
+footer .footer-container .social-link li:last-of-type{
+    margin-right: 0px;
+}
+
+footer .footer-container .social-link li a{
+    color: white;
+    font-size: 24px;
+}
+/* ==================
+    footer css starts
