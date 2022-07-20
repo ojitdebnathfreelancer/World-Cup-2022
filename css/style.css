@@ -235,7 +235,7 @@ img{
 footer{
     background-color: black;
     color: white;
-    margin-top: 130px;
+    margin-top: 100px;
     padding: 130px 0;
     box-sizing: border-box;
 }
@@ -269,6 +269,11 @@ footer .footer-container .link li a{
     font-size: 16px;
     color: gray;
     margin-right:30px;
+    transition: text-decoration 0.4s ease-in;
+}
+
+footer .footer-container .link li a:hover{
+    text-decoration: underline;
 }
 
 footer .footer-container .social-link{
